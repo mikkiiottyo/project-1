@@ -5,30 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>order here</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+     <!--fonts-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: beige;
+            font-family: orelega one;
+        }
+         .hero-section {
+            background-color:beige;
+            padding: 40px 0;
+        }
+        .service-section {
+            padding: 60px 0;
+            background-color: beige;
+        }
+        .btn {
+            background-color: gold;
+            color: black;
+            border: none;
+        }
+        .btn:hover {
+            background-color: darkgoldenrod;
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <a href="index.html">Home</a>
-<!-- Navigation Bar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Your Service</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#pickup">Pick-Up</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#delivery">Delivery</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#reserve">Reserve</a>
-            </li>
-        </ul>
-    </div>
-</nav>
-
 <!-- Hero Section -->
 <div class="hero-section text-center">
     <h1>Welcome to Our Service</h1>
@@ -36,7 +42,7 @@
 </div>
 
 <!-- Pick-Up Section -->
-<div id="pickup" class="service-section bg-light">
+<div id="pickup" class="service-section">
     <div class="container">
         <h2 class="text-center">Pick-Up</h2>
         <p class="text-center">Select the time and location to pick up your order.</p>
@@ -59,7 +65,7 @@
                     <option value="meat">Meat Pizza - $14.99</option>
                 </select>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn">Submit</button>
         </form>
     </div>
 </div>
@@ -88,13 +94,13 @@
                     <option value="meat">Meat Pizza - $14.99</option>
                 </select>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn">Submit</button>
         </form>
     </div>
 </div>
 
 <!-- Reserve Section -->
-<div id="reserve" class="service-section bg-light">
+<div id="reserve" class="service-section">
     <div class="container">
         <h2 class="text-center">Reserve</h2>
         <p class="text-center">Book a reservation with us today.</p>
@@ -111,19 +117,10 @@
                 <label for="reserve-time">Reservation Time</label>
                 <input type="datetime-local" class="form-control" id="reserve-time">
             </div>
-            <button type="submit" class="btn btn-primary">Reserve Now</button>
+            <button type="submit" class="btn">Reserve Now</button>
         </form>
     </div>
 </div>
-
-
-
-
-
-
-
-
-
 
      <!-- Scripts -->
      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
